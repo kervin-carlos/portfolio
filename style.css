@@ -1,0 +1,195 @@
+/*Global Style*/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  background-image: url('background_img.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+
+  /*Fade Transition*/
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+  /*Fade Transition*/
+body.fade-out {
+  opacity: 0;
+}
+
+
+/* Header & Navigation */
+header {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background: #616052;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+
+nav {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  border-radius: 47px;
+  background: #616052;
+  box-shadow:  5px 5px 10px #525246,
+             -5px -5px 10px #706e5e;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  
+  border-radius: 37px;
+  background: #414039;
+  box-shadow: inset 8px 8px 16px #35342e,
+            inset -8px -8px 16px #4d4c44;
+}
+
+/* Hero Section (Home) */
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.home-content, .about {
+  max-width: 900px;
+  width: 100%;
+  text-align: left;
+  margin-left: 4vw;
+}
+
+.home-content h1 {
+  margin-bottom: 3px;
+}
+
+.home-img img {
+  width: 40vw;
+  max-width: 400px;
+  min-width: 150px;
+  border-radius: 70%;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: black;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #616052;
+}
+
+/* Typography */
+h1 {
+  font-size: clamp(43px, 2vw, 80px);
+  font-weight: bold;
+  text-align: left;
+  color: #616052;
+}
+
+h1 span {
+  font-size: 1.3em;
+  color: #829dc9;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+
+/*Hide the Hamburger Button */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Show Hamburger Button Only on Small Screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #616052;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  /* Show menu when toggled */
+  nav.nav-active {
+    display: flex;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+  }
+}
+
+/* Nav is always visible on larger screens */
+@media (min-width: 769px) {
+  nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+  }
+}
