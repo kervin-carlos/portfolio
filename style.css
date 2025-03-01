@@ -29,6 +29,103 @@ body.fade-out {
   opacity: 0;
 }
 
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+  transition: background 0.5s ease;
+}
+
+/* Button Styling */
+#dark-mode-toggle {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+#dark-mode-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* Sun & Moon icon animation */
+#toggle-icon {
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+/* Sun Color */
+#toggle-icon {
+  color: #c2b74b; 
+  font-size: 24px;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+/* Moon Color */
+.dark-mode #toggle-icon {
+  transform: rotate(360deg);
+  color: white;
+}
+
+/* Dark Mode Global Styles */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+    /* Text elements switch dark mode */
+    .dark-mode h1, 
+    .dark-mode h2, 
+    .dark-mode h3, 
+    .dark-mode p, 
+    .dark-mode a {
+      color: white !important;
+    }
+
+    .dark-mode h1 span {
+      font-size: 1.3em;
+      color: #FFFFFF;
+      text-shadow: 0 0 5px #d5d3d3, 0 0 10px #dbdada, 0 0 15px #dcdbdb, 0 0 20px 
+                            #829DC9, 0 0 30px #829DC9, 0 0 75px #829DC9;
+    }
+
+    /* Header and navigation dark mode */
+    .dark-mode header {
+      background-color: #1a1a1a;
+    }
+
+    .dark-mode nav a {
+      color: white !important;
+    }
+
+    .dark-mode #dark-mode-toggle {
+      color: yellow;
+    }
+
+    .dark-mode .skills-container {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Dark mode styles for navigation links */
+    .dark-mode nav a {
+      color: white !important;
+      background: #333 !important;
+      box-shadow: 5px 5px 10px #222, -5px -5px 10px #444 !important;
+    }
+
+    /* Dark mode hover effect */
+    .dark-mode nav a:hover {
+      background: #222 !important;
+      box-shadow: inset 8px 8px 16px #111, inset -8px -8px 16px #333 !important;
+    }
+
+
+
+
 
 /* Header & Navigation */
 header {
@@ -136,6 +233,7 @@ h1 {
 h1 span {
   font-size: 1.3em;
   color: #829dc9;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC, 2px 2px 2px rgba(128,206,205,0);
 }
 
 h2 {

@@ -11,19 +11,46 @@
 <body>
 
   <header>
+    <button id="dark-mode-toggle" onclick="toggleDarkMode()">
+      <i id="toggle-icon" class="fas fa-sun"></i>
+    </button>
     <span class="logo">Kervin Andy Carlos</span>
     <button id="menu-toggle" class="hamburger">&#9776;</button>
     <nav>
-      <a href="portfolio.html">Home</a>
-      <a href="#">Experience</a>
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
       <a href="about.html" class="active">About</a>
-      <a href="#">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <section class="about">
     <h1>About Me</h1>
     <p>Hi, I'm Kervin! I'm an aspiring IT professional passionate about web development and technology.</p>
+  </section>
+
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <a href="coding-projects.html" target="_blank">
+          <img src="coding.png" alt="Coding" class="skill-icon">
+        </a>
+        <p>Coding</p>
+      </div>
+      <div class="skill">
+        <a href="ms-certifications.html" target="_blank">
+          <img src="microsoft-cert.png" alt="Microsoft Certification" class="skill-icon">
+        </a>
+        <p>Microsoft Certified</p>
+      </div>
+      <div class="skill">
+        <a href="word-expertise.html" target="_blank">
+          <img src="word.png" alt="Microsoft Word Expertise" class="skill-icon">
+        </a>
+        <p>Microsoft Word Expert</p>
+      </div>
+    </div>
   </section>
 
   <script src="script.js"></script>
