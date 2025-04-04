@@ -1,0 +1,93 @@
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+    transition: background 0.5s ease;
+  }
+  
+  /* Button Styling */
+  #dark-mode-toggle {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect */
+  #dark-mode-toggle:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Sun & Moon icon animation */
+  #toggle-icon {
+    transition: transform 0.5s ease, color 0.5s ease;
+  }
+  
+  /* Sun Color */
+  #toggle-icon {
+    color: #c2b74b; 
+    font-size: 24px;
+    transition: transform 0.5s ease, color 0.5s ease;
+  }
+  
+  /* Moon Color */
+  .dark-mode #toggle-icon {
+    transform: rotate(360deg);
+    color: white;
+  }
+  
+  /* Dark Mode Global Styles */
+  .dark-mode {
+    background-color: #121212;
+    color: white;
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+  
+      /* Text elements switch dark mode */
+      .dark-mode h1, 
+      .dark-mode h2, 
+      .dark-mode h3, 
+      .dark-mode p, 
+      .dark-mode a {
+        color: white !important;
+      }
+  
+      .dark-mode #my-name{
+        font-size: 1.3em;
+        color: #FFFFFF;
+        text-shadow: 0 0 5px #d5d3d3, 0 0 10px #dbdada, 0 0 15px #dcdbdb, 0 0 20px 
+                              #829DC9, 0 0 30px #829DC9, 0 0 75px #829DC9;
+      }
+  
+      /* Header and navigation dark mode */
+      .dark-mode header {
+        background-color: #1a1a1a;
+      }
+  
+      .dark-mode nav a {
+        color: white !important;
+      }
+  
+      .dark-mode #dark-mode-toggle {
+        color: yellow;
+      }
+  
+      .dark-mode .skills-container {
+        background-color: #222;
+        padding: 20px;
+        border-radius: 10px;
+      }
+  
+      /* Dark mode styles for navigation links */
+      .dark-mode nav a {
+        color: white !important;
+        background: #333 !important;
+        box-shadow: 5px 5px 10px #222, -5px -5px 10px #444 !important;
+      }
+  
+      /* Dark mode hover effect */
+      .dark-mode nav a:hover {
+        background: #222 !important;
+        box-shadow: inset 8px 8px 16px #111, inset -8px -8px 16px #333 !important;
+      }

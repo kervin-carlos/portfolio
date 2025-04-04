@@ -1,0 +1,30 @@
+/* General Styles */
+.skills {
+    text-align: center;
+    padding: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* Ensures images wrap on smaller screens */
+    gap: 15px;
+}
+
+.skill-icon {
+    width: 80px;  /* Adjust size */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);  /* Small hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;  /* Stack images on smaller screens */
+        align-items: center;
+    }
+}
