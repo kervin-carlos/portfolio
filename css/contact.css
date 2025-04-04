@@ -1,0 +1,85 @@
+/* Contact Page Section */
+#contact-info {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#contact-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #616052;
+  margin-bottom: 20px;
+}
+
+#contact-info p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact-info ul li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+#contact-info ul li a {
+  text-decoration: none;
+  color: #616052;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+#contact-info ul li a:hover {
+  color: #414039;
+}
+
+#contact-info ul li a i {
+  font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #contact-info h3 {
+    font-size: 1.8rem;
+  }
+
+  #contact-info p {
+    font-size: 1.1rem;
+  }
+
+  #contact-info ul li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact-info h3 {
+    font-size: 1.5rem;
+  }
+
+  #contact-info p {
+    font-size: 1rem;
+  }
+
+  #contact-info ul li {
+    font-size: 0.9rem;
+  }
+
+  #contact-info ul li a {
+    font-size: 0.9rem;
+  }
+
+  #contact-info ul li a i {
+    font-size: 1.2rem;
+  }
+}

@@ -91,3 +91,40 @@
         background: #222 !important;
         box-shadow: inset 8px 8px 16px #111, inset -8px -8px 16px #333 !important;
       }
+
+
+      #contact-info {
+        background-color: #333;
+        padding: 40px 20px;
+        text-align: center;
+        margin-top: 40px;
+      }
+      
+      #contact-info h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #616052;
+        margin-bottom: 20px;
+      }
+      
+      #contact-info p {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      #contact-info ul li a {
+        text-decoration: none;
+        color: #616052;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        transition: color 0.3s ease;
+      }
+      
+      #contact-info ul li a:hover {
+        color: #414039;
+      }
+
+

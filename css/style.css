@@ -13,7 +13,7 @@
 
 body {
   /*min-height: 100vh;*/
-  background-image: url('background_img.png'); /* Picture*/
+  background-image: url('/css/res/background_img.png'); /* Picture*/
   background-size: cover; /* parallax */
   background-position: center; /* centered */
   background-attachment: fixed; /* fixed on the page when scrolling */
@@ -47,7 +47,7 @@ header{
 }
 
 .logo { /*Kervin Andy Carlos*/
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ffffff;
   letter-spacing: 2px;
 }
@@ -228,7 +228,7 @@ h2 {
 
   
   .logo{
-    font-size: 5vw;
+    font-size: 3.4vw;
   }
 
   .hamburger {
@@ -265,6 +265,7 @@ h2 {
   nav a{
     display: block;
     padding: 10px;
+    font-size: 14px;
   }
 }
 
