@@ -94,7 +94,7 @@
 
 
       #contact-info {
-        background-color: #333;
+        background-color: var(--bg-color);
         padding: 40px 20px;
         text-align: center;
         margin-top: 40px;
@@ -103,19 +103,19 @@
       #contact-info h3 {
         font-size: 2rem;
         font-weight: 700;
-        color: #616052;
+        color: var(--accent-color);
         margin-bottom: 20px;
       }
       
       #contact-info p {
         font-size: 1.2rem;
-        color: #333;
+        color: var(--text-color);
         margin-bottom: 10px;
       }
-
+      
       #contact-info ul li a {
         text-decoration: none;
-        color: #616052;
+        color: var(--accent-color);
         font-weight: 600;
         display: inline-flex;
         align-items: center;
