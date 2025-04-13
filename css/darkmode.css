@@ -1,4 +1,4 @@
-/* Dark mode styles */
+Dark mode styles
 .dark-mode {
     background-color: #121212;
     color: white;
@@ -14,11 +14,11 @@
     transition: transform 0.3s ease;
   }
   
+
   /* Hover effect */
   #dark-mode-toggle:hover {
     transform: scale(1.2);
   }
-  
   /* Sun & Moon icon animation */
   #toggle-icon {
     transition: transform 0.5s ease, color 0.5s ease;
@@ -92,39 +92,7 @@
         box-shadow: inset 8px 8px 16px #111, inset -8px -8px 16px #333 !important;
       }
 
+.dark-mode #contact-info{
+  background-color: #353535d3;
 
-      #contact-info {
-        background-color: var(--bg-color);
-        padding: 40px 20px;
-        text-align: center;
-        margin-top: 40px;
-      }
-      
-      #contact-info h3 {
-        font-size: 2rem;
-        font-weight: 700;
-        color: var(--accent-color);
-        margin-bottom: 20px;
-      }
-      
-      #contact-info p {
-        font-size: 1.2rem;
-        color: var(--text-color);
-        margin-bottom: 10px;
-      }
-      
-      #contact-info ul li a {
-        text-decoration: none;
-        color: var(--accent-color);
-        font-weight: 600;
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        transition: color 0.3s ease;
-      }
-      
-      #contact-info ul li a:hover {
-        color: #414039;
-      }
-
-
+}

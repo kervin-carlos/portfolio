@@ -1,18 +1,25 @@
 /* General Styles */
+
+
 .skills {
+    /* display: flex; */
+    margin: 30px;
     text-align: center;
     padding: 20px;
+    gap: 20px;
 }
 
 .skills-container {
     display: flex;
+    background-color: #e8ebe2;
+    padding: 20px;
     justify-content: center;
     flex-wrap: wrap;  /* Ensures images wrap on smaller screens */
-    gap: 15px;
+    border-radius: 10px;
 }
 
 .skill-icon {
-    width: 80px;  /* Adjust size */
+    width: 80px;  /*Adjust size*/
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -21,10 +28,3 @@
     transform: scale(1.1);  /* Small hover effect */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .skills-container {
-        flex-direction: column;  /* Stack images on smaller screens */
-        align-items: center;
-    }
-}

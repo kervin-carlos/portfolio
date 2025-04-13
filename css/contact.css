@@ -1,14 +1,16 @@
 /* Contact Page Section */
 #contact-info {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
+  margin: auto;
+  background-color: #e8ebe2;
+  border-radius: 10px;
+  padding: 40px;
   text-align: center;
   margin-top: 40px;
+  width: 90%;
 }
 
 #contact-info h3 {
   font-size: 2rem;
-  font-weight: 700;
   color: #616052;
   margin-bottom: 20px;
 }

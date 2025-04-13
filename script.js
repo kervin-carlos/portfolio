@@ -1,5 +1,23 @@
+
+
+
+// BootStrap Tooltip ver. 5.3
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle");
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  });
+
+document.addEventListener("DOMContentLoaded", function () {
+const myCarouselElement = document.querySelector('#myCarousel')
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false
+})});
+
+
+// Burger Button
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle"); //button of the burger
     const nav = document.querySelector("nav");
 
     if (menuToggle) {
@@ -11,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll("nav a"); // Select all nav links
+    const links = document.querySelectorAll("nav a");
     
     links.forEach(link => {
       link.addEventListener("click", function (e) {
@@ -19,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const href = this.getAttribute("href");
   
         document.body.classList.add("fade-out"); // Start fade effect
+
+        const nav = document.querySelector("nav");
+        nav.style.transition = "none";  // Prevent transition on the nav
   
         setTimeout(() => {
           window.location.href = href; // Navigate after fade effect

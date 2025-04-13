@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
     <link rel="stylesheet" href="css/style.css" >
     <link rel="stylesheet" href="css/darkmode.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="prefetch" href="about.html">
+    <link rel="prefetch" href="contact.html">
+    <link rel="prefetch" href="experience.html">
 </head>
 <body>
 <!-- Header Section -->
  <header>
-  <button id="dark-mode-toggle" onclick="toggleDarkMode()">
+  <button class="animate__animated animate__heartBeat" id="dark-mode-toggle" onclick="toggleDarkMode()">
     <i id="toggle-icon" class="fas fa-sun"></i>
   </button>
   <span class="logo">Kervin Andy Carlos</span>
@@ -32,7 +38,7 @@
 <section class="home">
   
   <!-- Profile Image + Social Icons -->
-  <div class="home-img">  
+  <div class="home-img animate__animated animate__slideInLeft">  
     <img src="css/res/kervin_img.jpg" alt="Kervin Carlos Profile Picture">
     
     <div class="social-icons">
@@ -50,11 +56,11 @@
   </div>
 
   <!-- Content Section -->
-  <div class="home-content">
+  <div class="home-content animate__animated animate__fadeInUpBig">
     <h1>Hi, it's <span id="my-name">Kervin</span></h1>
-    <h2>an Aspiring IT Professional</h2>
+    <h2>Bachelor of Science in <strong>Information Technology</strong> – Ongoing</h2>
     <p>
-      Welcome to my portfolio. I'm an IT student who codes, designs, and explores the world of technology.
+      I'm an entry-level IT student who explores the world of technology to solve real world problems.
       <br>Feel free to look around and connect with me!
     </p>
   </div>
