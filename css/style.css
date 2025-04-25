@@ -197,12 +197,6 @@ nav a:hover {
   padding-right: 20px;
 }
 
-.skill{
-  display: flex;
-  gap:20px;
-}
-
-
 .hamburger {
   display: none;/*Hide the Hamburger Button */
   font-size: 30px;
@@ -212,26 +206,67 @@ nav a:hover {
   cursor: pointer;
 }
 
-#carouselExampleCaptions{
-  max-width: 500px;
-  width: 80%;
-  margin: auto;
+#carouselExampleCaptions {
+  width: 100%;
+  max-width: 800px; /* Control the maximum width of the carousel */
+  margin: 40px auto; /* Center the carousel horizontally with some space on top */
+  position: relative;
 }
 
-.carousel-item img{
-  max-width: 400px;
-  margin: auto;
-  object-fit: cover;
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
 }
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item img {
+  max-width: 100%; /* Ensure the image fits within the carousel container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the whole image is visible */
+  margin: auto; /* Center the image horizontally */
+}
+
+.carousel-caption-outside {
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background for readability */
+  padding: 15px 20px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption-outside h5 {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.carousel-caption-outside p {
+  margin: 0;
+}
+
 .carousel-control-prev-icon,
-.carousel-control-next-icon
-{
-  background-color:#333;
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 10px;
 }
 
-.carousel-caption {
-  color: #333;
+.carousel-indicators [data-bs-target] {
+  background-color: #888;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
 }
+
+.carousel-indicators .active {
+  background-color: #000;
+}
+
+
 
 
 /* Show Hamburger Button Only on Small Screens */

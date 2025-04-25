@@ -1,8 +1,9 @@
 /* General Styles */
 
 
+
+
 .skills {
-    /* display: flex; */
     margin: 30px;
     text-align: center;
     padding: 20px;
@@ -28,3 +29,14 @@
     transform: scale(1.1);  /* Small hover effect */
 }
 
+@media (max-width: 480px) {
+    .skills {
+      margin: 10px;
+      padding: 8px;
+    }
+  
+    .skill-icon {
+      width: 50px;
+      margin: 6px;
+    }
+  }
