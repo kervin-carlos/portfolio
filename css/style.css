@@ -13,8 +13,8 @@
 }
 
 body {
-  /*min-height: 100vh;*/
-  background-image: url('res/background_img.png'); /* Picture*/
+  /* min-height: 100vh; */
+  background-image: url('res/background_img.png');
   background-size: cover; /* parallax */
   background-position: center; /* centered */
   background-attachment: fixed; /* fixed on the page when scrolling */
@@ -51,6 +51,8 @@ header{
   font-size: 1rem;
   color: var(--white);
   letter-spacing: 2px;
+  margin-right: auto;
+  margin-left: 6px;
 }
 
 
@@ -180,16 +182,13 @@ nav a:hover {
 
 
 .about {
-  margin: 20px;
-  max-width: fit-content;
-  text-align: left;
-  margin-left: 4vw;
+  margin: 90px 15px;
 }
 
 .about h1 {
   font-size: clamp(43px, 2vw, 80px);
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   color: var(--dirty-green);
   margin-bottom: 20px;
 }
@@ -206,66 +205,15 @@ nav a:hover {
   cursor: pointer;
 }
 
-#carouselExampleCaptions {
+
+  #vanta-bg {
+  position: fixed;
   width: 100%;
-  max-width: 800px; /* Control the maximum width of the carousel */
-  margin: 40px auto; /* Center the carousel horizontally with some space on top */
-  position: relative;
+  height: 100%;
+  z-index: -1; /* behind everything */
+  top: 0;
+  left: 0;
 }
-
-.carousel-inner {
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel-item {
-  text-align: center;
-}
-
-.carousel-item img {
-  max-width: 100%; /* Ensure the image fits within the carousel container */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensure the whole image is visible */
-  margin: auto; /* Center the image horizontally */
-}
-
-.carousel-caption-outside {
-  margin-top: 15px;
-  background-color: rgba(0, 0, 0, 0.6); /* Dark background for readability */
-  padding: 15px 20px;
-  border-radius: 12px;
-  color: white;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.carousel-caption-outside h5 {
-  margin-bottom: 5px;
-  font-weight: 600;
-}
-
-.carousel-caption-outside p {
-  margin: 0;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 50%;
-  padding: 10px;
-}
-
-.carousel-indicators [data-bs-target] {
-  background-color: #888;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0 5px;
-}
-
-.carousel-indicators .active {
-  background-color: #000;
-}
-
 
 
 

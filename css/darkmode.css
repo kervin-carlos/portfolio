@@ -50,8 +50,12 @@ Dark mode styles
       .dark-mode h3, 
       .dark-mode p, 
       .dark-mode a {
-        color: white !important;
+        color: white;
       }
+
+      /* .dark-mode .about p{
+        background-color: #333;
+      } */
   
       .dark-mode #my-name{
         font-size: 1.3em;
@@ -92,7 +96,34 @@ Dark mode styles
         box-shadow: inset 8px 8px 16px #111, inset -8px -8px 16px #333 !important;
       }
 
-.dark-mode #contact-info{
+      .dark-mode .div1,
+      .dark-mode .div2,
+      .dark-mode .div3,
+      .dark-mode .div4,
+      .dark-mode .div5,
+      .dark-mode .div6,
+      .dark-mode .div7,
+      .dark-mode .div8,
+      .dark-mode .div9 {
+        border-radius: 44px;
+        background: #474747;
+        box-shadow: inset 5px 5px 13px #3c3c3c,
+                    inset -5px -5px 13px #525252;
+        text-align: center;
+        transition: all 0.3s ease;
+      }     
+
+
+.dark-mode .contact-info{
   background-color: #353535d3;
 
 }
+.dark-mode .contact-info a{
+  color: white;
+
+}
+
+
+  .dark-mode .timeline p, .date{
+    color: #c4c4c4;
+  }

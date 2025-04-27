@@ -1,36 +1,17 @@
 /* General Styles */
 
 
-
-
-.skills {
-    margin: 30px;
-    text-align: center;
-    padding: 20px;
-    gap: 20px;
+:root{
+  --black: #333;
+  --dirty-green:#616052;
+  --white:#ffffff;
 }
 
-.skills-container {
-    display: flex;
-    background-color: #e8ebe2;
-    padding: 20px;
-    justify-content: center;
-    flex-wrap: wrap;  /* Ensures images wrap on smaller screens */
-    border-radius: 10px;
-}
 
-.skill-icon {
-    width: 80px;  /*Adjust size*/
-    height: auto;
-    transition: transform 0.3s ease;
-}
 
-.skill-icon:hover {
-    transform: scale(1.1);  /* Small hover effect */
-}
 
 @media (max-width: 480px) {
-    .skills {
+    /* .skills {
       margin: 10px;
       padding: 8px;
     }
@@ -38,5 +19,5 @@
     .skill-icon {
       width: 50px;
       margin: 6px;
-    }
+    } */
   }
