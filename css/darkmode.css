@@ -48,9 +48,12 @@ Dark mode styles
       .dark-mode h1, 
       .dark-mode h2, 
       .dark-mode h3, 
-      .dark-mode p, 
-      .dark-mode a {
+      .dark-mode p, .dark-mode a{
         color: white;
+      }
+
+      .dark-mode .timeline-item a{
+        color:#37363f;
       }
 
       /* .dark-mode .about p{
@@ -125,5 +128,5 @@ Dark mode styles
 
 
   .dark-mode .timeline p, .date{
-    color: #c4c4c4;
+    color: #8f8f8f;
   }

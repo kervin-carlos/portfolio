@@ -109,11 +109,14 @@ nav a:hover {
   text-align: left;
   margin-left: 4vw;
 }
+.home-content p{
+  font-size: clamp(16px, 2vw, 20px);
+}
 
 .home-content h1 {
   margin-bottom: 3px;
   
-  font-size: clamp(43px, 2vw, 80px);
+  font-size: clamp(35px, 2vw, 80px);
   font-weight: bold;
   text-align: left;
   color: var(--dirty-green);
@@ -217,8 +220,6 @@ nav a:hover {
 }
 
 
-
-/* Show Hamburger Button Only on Small Screens */
 @media (max-width: 768px) {
 
   
@@ -234,7 +235,7 @@ nav a:hover {
   }
 
   nav {
-    display: none; /*hides it by default*/
+    display: none;
     flex-direction: column;
     background: var(--dirty-green);
     position: absolute; /*absolute + top combo*/
