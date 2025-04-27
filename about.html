@@ -44,25 +44,53 @@
 
   <section class="about">
     <h1>About Me</h1>
+    <div class="container-wrapper">
+    <img src="css/res/image.png" alt="Me">
     <p>
       I’m Kervin, an undergraduate student aspiring to become an IT professional. I am an ambitious and competent learner who enjoys 
       taking on new challenges. With a combination of strong interpersonal skills and the ability to work independently, I thrive in 
       both collaborative and individual environments. I consistently aim to improve my technical and soft skills.
       <br>
+      <br>
       I am currently seeking an entry-level position where I can contribute meaningfully to a team and apply the knowledge I've gained 
       through my studies. My goal is to grow into a skilled IT professional, continually learning new technologies and making impactful 
       contributions to future projects and organizations
+      <br>
+      <br> 
       </p>
+    </div>
   </section>
 
   <style>
+    .about{
+      display:flex;
+      flex-direction: column;
+    }
+
+
+    .container-wrapper img{
+    width: 20%;
+      
+    /* glassmorphism */
+    background: rgba( 232, 235, 226, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    }
+
+    .container-wrapper{
+    display: flex;
+    align-items: center; 
+    }
 
     
     .about p{
-      margin: 40px;
+    /* margin: 40px; */
     padding: 20px 40px 15px 40px;
     border-radius: 10px;
     line-height: 1.7;
+    
 
     /* glassmorphism */
     background: rgba( 232, 235, 226, 0.05 );
