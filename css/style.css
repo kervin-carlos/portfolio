@@ -109,6 +109,12 @@ nav a:hover {
   text-align: left;
   margin-left: 4vw;
 }
+
+.home-img:hover img{
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
 .home-content p{
   font-size: clamp(16px, 2vw, 20px);
 }
