@@ -63,13 +63,21 @@ Dark mode styles
         color: white;
       }
 
+      .dark-mode .glass-card{
+        box-shadow: -2px 2px 2px 0px rgba(64, 64, 54, 0.5), inset 0px -0px 16px 0px rgba(64, 64, 54, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+      }
+
       .dark-mode .timeline-item a{
         color:#37363f;
       }
 
-      /* .dark-mode .about p{
-        background-color: #333;
-      } */
+      .dark-mode .about p{
+        box-shadow: 0 8px 20px 0px rgb(255 255 255 / 13%);
+      }
+
+      .dark-mode .color{
+        box-shadow: 0 8px 32px 0 rgb(255 255 255 / 13%);
+      }
   
       .dark-mode #my-name{
         font-size: 1.3em;
@@ -139,6 +147,39 @@ Dark mode styles
 
 
   .dark-mode .timeline p, .date{
-    color: #8f8f8f;
+    color: #b7b7b7;
   }
 
+.dark-mode .accordion-button  {
+  background-color: #222222;
+  color: white;
+}
+
+
+.dark-mode .penguin{
+  /* filter: saturate(100%) brightness(100%) contrast(60%); */
+  /* filter: invert(100%) brightness(80%) contrast(90%); */
+  filter: sepia(100%) hue-rotate(100deg) saturate(300%) brightness(90%);
+}
+
+.dark-mode .accordion{
+  --bs-accordion-bg:#333;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23ffffff'%3E%3Cpath d='M4 12H20M12 4V20' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --bs-accordion-border-color:#828282;
+}
+
+.dark-mode .timeline{
+  color: white;
+}
+.dark-mode .timeline a{
+  color: rgb(57, 147, 185);
+}
+
+.dark-mode .accordion-button:not(.collapsed){
+  background-color: #535353;
+  color: white;
+}
+
+.dark-mode .timeline .timeline-item:after{
+  background-color: hsl(0, 0%, 89%);
+}
