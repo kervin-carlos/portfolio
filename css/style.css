@@ -17,7 +17,7 @@ body {
   background-image: url('res/background_img.png');
   background-size: cover; /* parallax */
   background-position: center; /* centered */
-  background-attachment: fixed; /* fixed on the page when scrolling */
+  background-attachment: fixed;
   color: var(--black); /*aesthetic*/
 
   /*Fade Transition*/
