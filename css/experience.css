@@ -1,0 +1,57 @@
+
+  /* accordion */
+  .accordion-button{
+    font-size: 20px;
+  }
+  
+  .accordion{
+    border-radius: 20px;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(245, 255, 209, 0.25);
+    --bs-accordion-btn-icon: url('https://www.svgrepo.com/show/532997/plus-large.svg');
+    --bs-accordion-btn-active-icon: url('https://www.svgrepo.com/show/532960/minus.svg');
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #c6c7bd;
+    color:#2f3133;
+  }
+
+
+  /* list group timeline */
+  .timeline {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+    margin-left: 40px;
+  }
+
+  .timeline .timeline-item {
+    position: relative;
+  }
+
+  .timeline .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+
+  .timeline .timeline-item:after {
+    background-color: hsl(0, 5%, 24%);
+    left: -38px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+  }
+
+  .timeline p {
+      color: #6c757d;
+  }
+
+  .date{
+    color: #6c757d;
+  }
+
+  .text p{
+    text-align: center;
+  }

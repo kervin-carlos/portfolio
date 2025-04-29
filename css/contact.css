@@ -22,7 +22,7 @@
   color: #616052;
 }
 
-.contact-info ul {
+/* .contact-info ul {
   list-style: none;
   padding: 0;
 }
@@ -30,7 +30,7 @@
 .contact-info ul li {
   font-size: 1.1rem;
   margin: 10px 0;
-}
+} */
 
 .contact-info ul li a {
   text-decoration: none;
@@ -48,5 +48,19 @@
 
 .contact-info ul li a i {
   font-size: 1.5rem;
+}
+
+.text p{
+  text-align: center;
+}
+
+.contact-info ul{
+  margin-top: 50px;
+}
+
+.penguin{
+  margin: 0;
+  padding: 0;
+  filter: hue-rotate(-30deg); /* Changes the hue! */
 }
 
