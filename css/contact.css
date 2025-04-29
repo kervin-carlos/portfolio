@@ -22,7 +22,7 @@
   color: #616052;
 }
 
-/* .contact-info ul {
+ .contact-info ul {
   list-style: none;
   padding: 0;
 }
@@ -30,16 +30,17 @@
 .contact-info ul li {
   font-size: 1.1rem;
   margin: 10px 0;
-} */
+} 
 
-.contact-info ul li a {
-  text-decoration: none;
-  color: #616052;
-  font-weight: 600;
-  display: inline-flex;
+.contact-info ul{
   align-items: center;
   gap: 10px;
   transition: color 0.3s ease;
+}
+
+.contact-info a{
+  text-decoration: none;
+  color: #616052;
 }
 
 .contact-info ul li a:hover {
@@ -62,5 +63,31 @@
   margin: 0;
   padding: 0;
   filter: hue-rotate(-30deg); /* Changes the hue! */
+}
+
+  @media (max-width: 500px) {
+    .contact-info a .text {
+      font-size: 0.8rem;
+      display: none !important;
+    }
+    .penguin {
+      width: auto;
+      height: 10%; /* You can adjust this percentage based on how small you want it */
+      max-width: 100%; /* Optional: This ensures the penguin doesn't stretch beyond its container's width */
+    }
+
+    .contact-contain {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+  }
+
+  .contact-info ul{
+    display: flex;
+  }
+
+
 }
 
