@@ -14,7 +14,7 @@
 
 body {
   /* min-height: 100vh; */
-  background-image: url('res/background_img.png');
+  background-image: url('../res/background_img.png');
   background-size: cover; /* parallax */
   background-position: center; /* centered */
   background-attachment: fixed;
