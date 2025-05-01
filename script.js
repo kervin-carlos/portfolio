@@ -1,6 +1,4 @@
 
-
-
 // BootStrap Tooltip ver. 5.3
 document.addEventListener("DOMContentLoaded", function () {
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -19,27 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
-
-
-  // document.addEventListener("DOMContentLoaded", function () {
-  //   const links = document.querySelectorAll("nav a");
-    
-  //   links.forEach(link => {
-  //     link.addEventListener("click", function (e) {
-  //       e.preventDefault(); // Prevent immediate navigation
-  //       const href = this.getAttribute("href");
-  
-  //       document.body.classList.add("fade-out"); // Start fade effect
-
-  //       // const nav = document.querySelector("nav");
-  //       // nav.style.transition = "none";  // Prevent transition on the nav
-  
-  //       setTimeout(() => {
-  //         window.location.href = href; // Navigate after fade effect
-  //       }, 500);
-  //     });
-  //   });
-  // });
 
 
   let vantaEffect; // Store VANTA instance
