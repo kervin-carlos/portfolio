@@ -35,6 +35,10 @@
     top: 0;
   }
 
+  h5{
+    display: inline-block;
+  }
+
   .timeline .timeline-item:after {
     background-color: hsl(0, 5%, 24%);
     left: -38px;

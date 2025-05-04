@@ -197,7 +197,7 @@ Dark mode styles
   color: white;
 }
 .dark-mode .timeline a{
-  color: rgb(57, 147, 185);
+  color: rgb(233, 233, 233);
 }
 
 .dark-mode .accordion-button:not(.collapsed){

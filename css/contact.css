@@ -3,9 +3,9 @@
   margin: auto;
   background-color: #e8ebe2;
   border-radius: 10px;
-  padding: 40px;
   text-align: center;
   margin-top: 40px;
+  padding: 40px;
   width: 90%;
   margin-bottom: 40px;
 
@@ -23,8 +23,15 @@
 }
 
  .contact-info ul {
+  display: flex; 
+  flex-direction: column;
+  text-align: left;
   list-style: none;
   padding: 0;
+  padding-top: 20px;
+  gap: 10px;
+  transition: color 0.3s ease;
+  margin-bottom: 0;
 }
 
 .contact-info ul li {
@@ -32,11 +39,6 @@
   margin: 10px 0;
 } 
 
-.contact-info ul{
-  align-items: center;
-  gap: 10px;
-  transition: color 0.3s ease;
-}
 
 .contact-info a{
   text-decoration: none;
@@ -55,10 +57,6 @@
   text-align: center;
 }
 
-.contact-info ul{
-  margin-top: 50px;
-}
-
 .penguin{
   margin: 0;
   padding: 0;
@@ -74,6 +72,7 @@
       width: auto;
       height: 10%; /* You can adjust this percentage based on how small you want it */
       max-width: 100%; /* Optional: This ensures the penguin doesn't stretch beyond its container's width */
+      margin-top: -20px;
     }
 
     .contact-contain {
@@ -86,6 +85,8 @@
 
   .contact-info ul{
     display: flex;
+    flex-direction: row;
+    padding: 0;
   }
   
 }
