@@ -1,58 +1,74 @@
-/* General Styles */
-
-
-:root{
+/* ---------------------------------------
+   Root Variables
+---------------------------------------- */
+:root {
   --black: #333;
-  --dirty-green:#616052;
-  --white:#ffffff;
+  --dirty-green: #616052;
+  --white: #ffffff;
 }
 
-.about{
-  display:flex;
+
+/* ---------------------------------------
+   Base Layout
+---------------------------------------- */
+.about {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.container-wrapper {
+  display: flex;
+  align-items: center;
+}
 
-/* Tech Stack images */
-.glass-card{
+
+/* ---------------------------------------
+   About Me Text Box (Glassmorphism)
+---------------------------------------- */
+.about p {
+  /* margin: 40px; */
+  padding: 20px 40px 15px 40px;
+  border-radius: 10px;
+  line-height: 1.7;
+
+  background: rgba(232, 235, 226, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+
+/* ---------------------------------------
+   Glass Card (Tech Stack Display Box)
+---------------------------------------- */
+.glass-card {
   width: 300px;
-  padding: 20px;  
-  backdrop-filter: blur(0px); background-color: rgba(255, 255, 255, 0.2); border-radius: 29px; box-shadow: -2px 2px 2px 0px rgba(64, 64, 54, 0.5), inset 0px -0px 16px 0px rgba(64, 64, 54, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
-  display: flex;  
+  padding: 20px;
+
+  backdrop-filter: blur(0px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 29px;
+
+  box-shadow: 
+    -2px 2px 2px 0px rgba(64, 64, 54, 0.5),
+    inset 0px -0px 16px 0px rgba(64, 64, 54, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+
+  display: flex;
   justify-content: center;
 }
 
-.glass-card img{
+.glass-card img {
   width: 20%;
   min-width: 200px;
   align-items: center;
 }
 
-/* wrapper of about me text */
-.container-wrapper{
-display: flex;
-align-items: center; 
-}
 
-
-.about p{
-/* margin: 40px; */
-padding: 20px 40px 15px 40px;
-border-radius: 10px;
-line-height: 1.7;
-
-
-/* glassmorphism */
-background: rgba( 232, 235, 226, 0.05 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 3px );
--webkit-backdrop-filter: blur( 3px );
-border-radius: 10px;
-}
-
-
-/* Horizontal dashed-line */
+/* ---------------------------------------
+   Horizontal Divider
+---------------------------------------- */
 .dashed-line {
   border: 0;
   border-top: 2px dashed #333;
@@ -61,30 +77,38 @@ border-radius: 10px;
 }
 
 
-/* color coding of tech stack */
+/* ---------------------------------------
+   Colored Section Container
+---------------------------------------- */
 .color {
   padding: 20px 40px 15px 40px;
   border-radius: 10px;
   line-height: 1.7;
+  margin: 50px;
+
   background: rgba(232, 235, 226, 0.05);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-  border-radius: 10px;
-  margin: 50px;
 }
+
 .color h2 {
   text-align: center;
-  margin-bottom: 40px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
+
+
+/* ---------------------------------------
+   Tech Stack Items (Flex + Grid Layout)
+---------------------------------------- */
 .color-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* allow wrapping if too many items */
+  flex-wrap: wrap; /* wrap items on smaller screens */
+  padding: 20px;
 }
 
-/* grid items of tech stack */
 .item {
   display: flex;
   flex-direction: column;
@@ -98,65 +122,73 @@ border-radius: 10px;
   font-size: 14px;
 }
 
+
+/* ---------------------------------------
+   Grid Container for Stack Icons
+---------------------------------------- */
 .parent {
   display: grid;
   width: 90%;
-  
+
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-rows: repeat(1, 1fr);
+
   gap: 15px;
   margin: 0 auto;
   margin-bottom: 90px;
+
   /* padding: 20px; */
 }
 
-.parent div{
-  /* width: 600px; */
-  /* height: auto; */
-}
-
-.parent img{
+.parent img {
   width: 40%;
   padding: 5px;
-  margin: 10px
+  margin: 10px;
 }
 
+
+/* ---------------------------------------
+   Tech Stack Icon Cards (Glassmorphic Grid Items)
+---------------------------------------- */
 .div1, .div2, .div3,
 .div4, .div5, .div6,
-.div7, .div8, .div9{
+.div7, .div8, .div9 {
   border-radius: 20px;
   background: #e0e0e0;
+
   box-shadow: inset 5px 5px 13px #bcbcbc,
               inset -5px -5px 13px #ffffff;
 
   text-align: center;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
 .div1:hover, .div2:hover, .div3:hover,
 .div4:hover, .div5:hover, .div6:hover,
-.div7:hover, .div8:hover, .div9:hover{
+.div7:hover, .div8:hover, .div9:hover {
   background: linear-gradient(145deg, #d4dac9, #f1f1f1); /* soft light */
-  box-shadow: 0px 0px 15px 5px rgba(85, 85, 74, 0.4); /* glow effect */
-  transform: scale(1.05); /* pop out */
+  box-shadow: 0px 0px 15px 5px rgba(85, 85, 74, 0.4);    /* glow effect */
+  transform: scale(1.05);                               /* pop out */
 }
 
 
+/* ---------------------------------------
+   Responsive Design
+---------------------------------------- */
 @media (max-width: 700px) {
-  .container-wrapper{
+  .container-wrapper {
     flex-direction: column;
   }
 }
 
-
 @media (max-width: 480px) {
-    /* .skills {
-      margin: 10px;
-      padding: 8px;
-    }
-  
-    .skill-icon {
-      width: 50px;
-      margin: 6px;
-    } */
+  /* .skills {
+    margin: 10px;
+    padding: 8px;
   }
+
+  .skill-icon {
+    width: 50px;
+    margin: 6px;
+  } */
+}

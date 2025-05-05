@@ -1,53 +1,46 @@
-/*Global Style*/
+/* ---------------------- Global Styles ---------------------- */
 * {
-  box-sizing: border-box; /* allows for better sizing calculation of m p b*/
-  margin: 0; /* full screen effect*/
-  padding: 0; /* removes padding for a cleaner look*/
-  font-family: 'Poppins', sans-serif; /*font of the whole*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
   --black: #333;
-  --dirty-green:#616052;
-  --white:#ffffff;
+  --dirty-green: #616052;
+  --white: #ffffff;
 }
 
 body {
-  /* min-height: 100vh; */
   background-image: url('../res/background_img.png');
-  background-size: cover; /* parallax */
-  background-position: center; /* centered */
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
-  color: var(--black); /*aesthetic*/
-
-  /*Fade Transition*/
+  color: var(--black);
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 
-  /*Fade Transition*/
 body.fade-out {
   opacity: 0;
 }
 
-
-/* Header & Navigation */
-header{
-  min-height: 70px; /* 70px */
-  display: flex; 
+/* ---------------------- Header & Navigation ---------------------- */
+header {
+  min-height: 70px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 5%; /* padding top-bot and padding left-right all at once*/
+  padding: 10px 5%;
   background: var(--dirty-green);
-  /*color: white;*/
-  /*font-family: 'Poppins', sans-serif;*/
-  position: sticky; /* Sticky in scrollbar*/
-  top: 0; /*0 so its on top of the page*/
-  z-index: 1000; /* Make sure that my Header is above all the contents*/
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   width: 100%;
 }
 
-.logo { /*Kervin Andy Carlos*/
+.logo {
   font-size: 1rem;
   color: var(--white);
   letter-spacing: 2px;
@@ -55,28 +48,25 @@ header{
   margin-left: 6px;
 }
 
-
 nav {
   transition: none;
   display: flex;
   gap: 15px;
-  /*margin-left: auto;*/
 }
 
-.nav_links{
+.nav_links {
   list-style: none;
 }
 
-.nav_links li{
+.nav_links li {
   display: inline-block;
 }
 
 nav a {
-  text-decoration: none; /*removes the underline*/
+  text-decoration: none;
   color: white;
   background: var(--dirty-green);
-  box-shadow:  5px 5px 10px #525246,
-             -5px -5px 10px #706e5e;
+  box-shadow: 5px 5px 10px #525246, -5px -5px 10px #706e5e;
   font-size: 16px;
   padding: 8px 12px;
   border-radius: 5px;
@@ -85,15 +75,13 @@ nav a {
 
 nav a:hover {
   transform: scale(1.1);
-  
   border-radius: 37px;
   background: #414039;
-  box-shadow: inset 8px 8px 16px #35342e,
-            inset -8px -8px 16px #4d4c44;
+  box-shadow: inset 8px 8px 16px #35342e, inset -8px -8px 16px #4d4c44;
 }
 
-/* Hero Section (Home) */
-.home{
+/* ---------------------- Hero Section (Home) ---------------------- */
+.home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,30 +91,30 @@ nav a:hover {
   margin-top: 10vh;
 }
 
-.home-content{
+.home-content {
   max-width: 900px;
   width: 100%;
   text-align: left;
   margin-left: 4vw;
 }
 
-.home-img:hover img{
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-}
-
-.home-content p{
-  font-size: clamp(16px, 2vw, 20px);
-}
-
 .home-content h1 {
   margin-bottom: 3px;
-  
   font-size: clamp(35px, 2vw, 80px);
   font-weight: bold;
   text-align: left;
   color: var(--dirty-green);
-  
+}
+
+.home-content h2 {
+  font-size: 19px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.home-content p {
+  font-size: clamp(16px, 2vw, 20px);
 }
 
 .home-img img {
@@ -136,7 +124,12 @@ nav a:hover {
   border-radius: 70%;
 }
 
-/* Social Icons */
+.home-img:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* ---------------------- Social Icons ---------------------- */
 .social-icons {
   margin-top: 15px;
   text-align: center;
@@ -154,59 +147,12 @@ nav a:hover {
   color: var(--dirty-green);
 }
 
-/* Typography */
-
-
-/*h1 span {
-  font-size: 1.3em;
-  color: #829dc9;
-  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC, 2px 2px 2px rgba(128,206,205,0);
-}*/
-
-#my-name { /*This is from https://easycodetools.com/tool/css-hover-effects-generator*/
-  font-size: 1.3em;
-  font-weight: bold;
-  font-family: sans-serif;
-  text-decoration: none;
-  
-  background: linear-gradient(77deg, #786896, #77C3D4, #829DC9);
-  background-size: 200% 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  
-  transition: background-position 0.5s ease-in-out;
-}
-
-/*This is from https://easycodetools.com/tool/css-hover-effects-generator*/
-#my-name:hover {
-  background-position: 100% 50%;
-}
-
-.home-content h2 {
-  font-size: 19px;
-  font-weight: 400;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-
-.about {
+/* ---------------------- About & Text Sections ---------------------- */
+.about, .text {
   margin: 90px 15px;
 }
 
-.about h1 {
-  font-size: clamp(43px, 2vw, 80px);
-  font-weight: bold;
-  text-align: center;
-  color: var(--dirty-green);
-  margin-bottom: 20px;
-}
-
-.text {
-  margin: 90px 15px;
-}
-
+.about h1,
 .text h1 {
   font-size: clamp(43px, 2vw, 80px);
   font-weight: bold;
@@ -215,12 +161,27 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.about p{
-  /* padding-right: 20px; */
+/* ---------------------- Typography & Effects ---------------------- */
+#my-name {
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-decoration: none;
+  background: linear-gradient(77deg, #786896, #77C3D4, #829DC9);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.5s ease-in-out;
 }
 
+#my-name:hover {
+  background-position: 100% 50%;
+}
+
+/* ---------------------- Hamburger Menu ---------------------- */
 .hamburger {
-  display: none;/*Hide the Hamburger Button */
+  display: none;
   font-size: 30px;
   background: none;
   border: none;
@@ -228,63 +189,59 @@ nav a:hover {
   cursor: pointer;
 }
 
+.hamburger:hover {
+  transform: scale(1.2);
+}
 
-  #vanta-bg {
+/* ---------------------- Background Animation ---------------------- */
+#vanta-bg {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: -1; /* behind everything */
+  z-index: -1;
   top: 0;
   left: 0;
 }
 
-
+/* ---------------------- Media Queries ---------------------- */
 @media (max-width: 768px) {
-
-  
-  .logo{
+  .logo {
     font-size: 3.4vw;
   }
 
   .hamburger {
     display: block;
   }
-  .hamburger:hover { /*hover animations*/
-    transform: scale(1.2); /*makes it big a little*/
-  }
 
   nav {
     display: none;
     flex-direction: column;
     background: var(--dirty-green);
-    position: absolute; /*absolute + top combo*/
-    max-height: 80vh; /*viewable height*/
-    top: 70px;/*70px below*/
-    right: 0; /*right sidebar*/
-    width: auto; /*automatic width based on the contents*/
-    padding: 10px 5px; /* padding of the nav ofcourse*/
-    text-align: center; /*centered ofcourse*/
-    border-bottom-left-radius: 10px; /* rounded corners*/
+    position: absolute;
+    max-height: 80vh;
+    top: 70px;
+    right: 0;
+    width: auto;
+    padding: 10px 5px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
-    overflow-y: auto;/*make it scrollable*/
-    scrollbar-width: thin; /* Makes scrollbar thinner */
-    scrollbar-color: #aaa var(--dirty-green); /* Scroll thumb & track colors */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aaa var(--dirty-green);
   }
-  /* Show menu when toggled */
+
   nav.nav-active {
-    display: flex; /*when button is clicked display none --> display flex*/
+    display: flex;
   }
 
-
-  nav a{
+  nav a {
     display: block;
     padding: 10px;
     font-size: 14px;
   }
 }
 
-/* Nav is always visible on larger screens */
 @media (min-width: 769px) {
   nav {
     display: flex !important;
@@ -292,5 +249,3 @@ nav a:hover {
     flex-direction: row;
   }
 }
-
-

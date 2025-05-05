@@ -1,210 +1,223 @@
-Dark mode styles
+/* ---------------------------------------
+   Dark Mode Root
+---------------------------------------- */
 .dark-mode {
-    background-color: #121212;
-    color: white;
-    transition: background 0.5s ease;
-    -webkit-background-color: #121212;
-  }
-  
-  /* Button Styling */
-  #dark-mode-toggle {
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    animation: spin 17s linear infinite;
-  }
-
-  @keyframes spin {
-    0% {
-        transform: rotate(0deg); /* Start at 0 degrees */
-    }
-    100% {
-        transform: rotate(360deg); /* End at 360 degrees */
-    }
-  }
-  
-
-  /* Hover effect */
-  #dark-mode-toggle:hover {
-    transform: scale(1.2);
-  }
-  /* Sun & Moon icon animation */
-  #toggle-icon {
-    transition: transform 0.5s ease, color 0.5s ease;
-  }
-  
-  /* Sun Color */
-  #toggle-icon {
-    color: #c2b74b; 
-    font-size: 24px;
-    transition: transform 0.5s ease, color 0.5s ease;
-  }
-  
-  /* Moon Color */
-  .dark-mode #toggle-icon {
-    transform: rotate(360deg);
-    color: white;
-  }
-  
-  /* Dark Mode Global Styles */
-  .dark-mode {
-    background-color: #121212;
-    color: white;
-    transition: background 0.5s ease, color 0.5s ease;
-  }
-  
-      /* Text elements switch dark mode */
-      .dark-mode h1, 
-      .dark-mode h2, 
-      .dark-mode h3, 
-      .dark-mode p, .dark-mode a{
-        color: white;
-      }
-
-      .dark-mode .glass-card{
-        box-shadow: -2px 2px 2px 0px rgba(64, 64, 54, 0.5), inset 0px -0px 16px 0px rgba(64, 64, 54, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
-      }
-
-      .dark-mode .timeline-item a{
-        color:#37363f;
-      }
-
-      .dark-mode .about p{
-        box-shadow: 0 8px 20px 0px rgb(255 255 255 / 13%);
-      }
-
-      .dark-mode .color{
-        box-shadow: 0 8px 32px 0 rgb(255 255 255 / 13%);
-      }
-  
-      .dark-mode #my-name{
-        font-size: 1.3em;
-        color: #FFFFFF;
-        text-shadow: 0 0 5px #d5d3d3, 0 0 10px #dbdada, 0 0 15px #dcdbdb, 0 0 20px 
-                              #829DC9, 0 0 30px #829DC9, 0 0 75px #829DC9;
-      }
-  
-      /* Header and navigation dark mode */
-      .dark-mode header {
-        background-color: #1a1a1a;
-      }
-  
-      .dark-mode nav a {
-        color: white !important;
-      }
-  
-      .dark-mode #dark-mode-toggle {
-        color: yellow;
-      }
-  
-      .dark-mode .skills-container {
-        background-color: #222;
-        padding: 20px;
-        border-radius: 10px;
-      }
-  
-      /* Dark mode styles for navigation links */
-      .dark-mode nav a {
-        color: white !important;
-        background: #333 !important;
-        box-shadow: 5px 5px 10px #222, -5px -5px 10px #444 !important;
-      }
-  
-      /* Dark mode hover effect */
-      .dark-mode nav a:hover {
-        background: #222 !important;
-        box-shadow: inset 8px 8px 16px #111, inset -8px -8px 16px #333 !important;
-      }
-
-      .dark-mode .div1,
-      .dark-mode .div2,
-      .dark-mode .div3,
-      .dark-mode .div4,
-      .dark-mode .div5,
-      .dark-mode .div6,
-      .dark-mode .div7,
-      .dark-mode .div8,
-      .dark-mode .div9 {
-        border-radius: 20px;
-        background: #474747;
-        box-shadow: inset 5px 5px 13px #3c3c3c,
-                    inset -5px -5px 13px #525252;
-        text-align: center;
-        transition: all 0.3s ease;
-      }
-      .dark-mode .div1:hover, 
-      .dark-mode .div2:hover, 
-      .dark-mode .div3:hover,
-      .dark-mode .div4:hover, 
-      .dark-mode .div5:hover, 
-      .dark-mode .div6:hover,
-      .dark-mode .div7:hover, 
-      .dark-mode .div8:hover, 
-      .dark-mode .div9:hover {
-        background: linear-gradient(145deg, #e2e2e2, #f1f1f1); /* soft light */
-        box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.4); /* glow effect */
-      }
-      .dark-mode .div1:hover p, 
-      .dark-mode .div2:hover p, 
-      .dark-mode .div3:hover p,
-      .dark-mode .div4:hover p, 
-      .dark-mode .div5:hover p, 
-      .dark-mode .div6:hover p,
-      .dark-mode .div7:hover p, 
-      .dark-mode .div8:hover p, 
-      .dark-mode .div9:hover p {
-         color: black;
-        }
-      
-     
-
-
-.dark-mode .contact-info{
-  background-color: #353535d3;
-
-}
-.dark-mode .contact-info a{
+  background-color: #121212;
   color: white;
+  transition: background 0.5s ease, color 0.5s ease;
+  -webkit-background-color: #121212;
+}
 
+/* ---------------------------------------
+   Toggle Button
+---------------------------------------- */
+#dark-mode-toggle {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: spin 17s linear infinite;
+}
+
+#dark-mode-toggle:hover {
+  transform: scale(1.2);
+}
+
+#toggle-icon {
+  color: #c2b74b;
+  font-size: 24px;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode #toggle-icon {
+  transform: rotate(360deg);
+  color: white;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 
-  .dark-mode .timeline p, .date{
-    color: #b7b7b7;
-  }
+/* ---------------------------------------
+   Text Elements
+---------------------------------------- */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode p, 
+.dark-mode a {
+  color: white;
+}
 
-.dark-mode .accordion-button  {
+.dark-mode .timeline p,
+.dark-mode .date {
+  color: #b7b7b7;
+}
+
+
+/* ---------------------------------------
+   Header and Navigation
+---------------------------------------- */
+.dark-mode header {
+  background-color: #1a1a1a;
+}
+
+.dark-mode nav a {
+  color: white !important;
+  background: #333 !important;
+  box-shadow: 5px 5px 10px #222, -5px -5px 10px #444 !important;
+}
+
+.dark-mode nav a:hover {
+  background: #222 !important;
+  box-shadow: inset 8px 8px 16px #111, inset -8px -8px 16px #333 !important;
+}
+
+.dark-mode #dark-mode-toggle {
+  color: yellow;
+}
+
+
+/* ---------------------------------------
+    Glass Card Effect
+---------------------------------------- */
+.dark-mode .glass-card {
+  box-shadow: -2px 2px 2px 0px rgba(64, 64, 54, 0.5),
+              inset 0px 0px 16px 0px rgba(64, 64, 54, 0.6),
+              inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+.dark-mode .about p {
+  box-shadow: 0 8px 20px 0px rgb(255 255 255 / 13%);
+}
+
+.dark-mode .color {
+  box-shadow: 0 8px 32px 0 rgb(255 255 255 / 13%);
+}
+
+.dark-mode .skills-container {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* ---------------------------------------
+    My Name (Header)
+---------------------------------------- */
+.dark-mode #my-name {
+  font-size: 1.3em;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #d5d3d3, 
+               0 0 10px #dbdada, 
+               0 0 15px #dcdbdb, 
+               0 0 20px #829DC9, 
+               0 0 30px #829DC9, 
+               0 0 75px #829DC9;
+}
+
+
+/* ---------------------------------------
+    Timeline (List Group)
+---------------------------------------- */
+.dark-mode .timeline {
+  color: white;
+  border-color: #b7b7b7;
+}
+
+.dark-mode .timeline a {
+  color: rgb(233, 233, 233);
+}
+
+.dark-mode .timeline .timeline-item:after {
+  background-color: hsl(0, 0%, 89%);
+}
+
+
+/* ---------------------------------------
+    Accordion (Experience Section)
+---------------------------------------- */
+.dark-mode .accordion {
+  --bs-accordion-bg: #333;
+  --bs-accordion-border-color: #828282;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23ffffff'%3E%3Cpath d='M4 12H20M12 4V20' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.dark-mode .accordion-button {
   background-color: #222222;
   color: white;
 }
 
-
-.dark-mode .penguin{
-  /* filter: saturate(100%) brightness(100%) contrast(60%); */
-  /* filter: invert(100%) brightness(80%) contrast(90%); */
-  filter: sepia(100%) hue-rotate(100deg) saturate(300%) brightness(90%);
-}
-
-.dark-mode .accordion{
-  --bs-accordion-bg:#333;
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23ffffff'%3E%3Cpath d='M4 12H20M12 4V20' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  --bs-accordion-border-color:#828282;
-}
-
-.dark-mode .timeline{
-  color: white;
-}
-.dark-mode .timeline a{
-  color: rgb(233, 233, 233);
-}
-
-.dark-mode .accordion-button:not(.collapsed){
+.dark-mode .accordion-button:not(.collapsed) {
   background-color: #535353;
   color: white;
 }
 
-.dark-mode .timeline .timeline-item:after{
-  background-color: hsl(0, 0%, 89%);
+
+/* ---------------------------------------
+    Footer
+---------------------------------------- */
+.dark-mode .contact-info {
+  background-color: #353535d3;
+}
+
+.dark-mode .contact-info a {
+  color: white;
+}
+
+
+/* ---------------------------------------
+    Penguin Image dark mode
+---------------------------------------- */
+.dark-mode .penguin {
+  filter: sepia(100%) hue-rotate(100deg) saturate(300%) brightness(90%);
+}
+
+
+/* ---------------------------------------
+   Tech Stack Icons dark mode
+ */
+.dark-mode .div1,
+.dark-mode .div2,
+.dark-mode .div3,
+.dark-mode .div4,
+.dark-mode .div5,
+.dark-mode .div6,
+.dark-mode .div7,
+.dark-mode .div8,
+.dark-mode .div9 {
+  border-radius: 20px;
+  background: #474747;
+  box-shadow: inset 5px 5px 13px #3c3c3c,
+              inset -5px -5px 13px #525252;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .div1:hover,
+.dark-mode .div2:hover,
+.dark-mode .div3:hover,
+.dark-mode .div4:hover,
+.dark-mode .div5:hover,
+.dark-mode .div6:hover,
+.dark-mode .div7:hover,
+.dark-mode .div8:hover,
+.dark-mode .div9:hover {
+  background: linear-gradient(145deg, #e2e2e2, #f1f1f1);
+  box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.4);
+}
+
+.dark-mode .div1:hover p,
+.dark-mode .div2:hover p,
+.dark-mode .div3:hover p,
+.dark-mode .div4:hover p,
+.dark-mode .div5:hover p,
+.dark-mode .div6:hover p,
+.dark-mode .div7:hover p,
+.dark-mode .div8:hover p,
+.dark-mode .div9:hover p {
+  color: black;
 }
