@@ -188,7 +188,15 @@
 .dark-mode .div6,
 .dark-mode .div7,
 .dark-mode .div8,
-.dark-mode .div9 {
+.dark-mode .div9,
+.dark-mode .div10,
+.dark-mode .div11,
+.dark-mode .div12,
+.dark-mode .div13,
+.dark-mode .div14,
+.dark-mode .div15,
+.dark-mode .div16,
+.dark-mode .div17 {
   border-radius: 20px;
   background: #474747;
   box-shadow: inset 5px 5px 13px #3c3c3c,
@@ -205,7 +213,15 @@
 .dark-mode .div6:hover,
 .dark-mode .div7:hover,
 .dark-mode .div8:hover,
-.dark-mode .div9:hover {
+.dark-mode .div9:hover, 
+.dark-mode .div10:hover,
+.dark-mode .div11:hover,
+.dark-mode .div12:hover,
+.dark-mode .div13:hover,
+.dark-mode .div14:hover,
+.dark-mode .div15:hover,
+.dark-mode .div16:hover,
+.dark-mode .div17:hover {
   background: linear-gradient(145deg, #e2e2e2, #f1f1f1);
   box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.4);
 }
@@ -218,6 +234,14 @@
 .dark-mode .div6:hover p,
 .dark-mode .div7:hover p,
 .dark-mode .div8:hover p,
-.dark-mode .div9:hover p {
+.dark-mode .div9:hover p, 
+.dark-mode .div10:hover p,
+.dark-mode .div11:hover p,
+.dark-mode .div12:hover p,
+.dark-mode .div13:hover p,
+.dark-mode .div14:hover p,
+.dark-mode .div15:hover p,
+.dark-mode .div16:hover p,
+.dark-mode .div17:hover p {
   color: black;
 }
