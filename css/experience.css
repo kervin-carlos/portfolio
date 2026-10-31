@@ -65,3 +65,220 @@ h5 {
 .text p {
   text-align: center;
 }
+
+/* ---------------------------------------
+   Project Details
+---------------------------------------- */
+.project-details-accordion {
+  margin-top: 1.25rem;
+  border: 0;
+  border-top: 1px solid rgba(47, 49, 51, 0.16);
+  border-radius: 0;
+  background: transparent;
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-width: 0;
+  --bs-accordion-btn-padding-x: 0;
+  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-inner-border-radius: 0;
+}
+
+.project-details-accordion .accordion-button {
+  display: inline-flex;
+  width: auto;
+  margin-top: 0.35rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid rgba(47, 49, 51, 0.3);
+  border-radius: 999px !important;
+  background: transparent;
+  color: #2f3133;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.project-details-accordion .accordion-button:hover {
+  border-color: #2f3133;
+  background: rgba(47, 49, 51, 0.06);
+}
+
+.project-details-accordion .accordion-button:focus-visible {
+  border-color: #2f3133;
+  box-shadow: 0 0 0 0.2rem rgba(47, 49, 51, 0.15);
+}
+
+.project-details-accordion .accordion-button:not(.collapsed) {
+  border-color: #2f3133;
+  background: transparent;
+  color: #2f3133;
+  box-shadow: none;
+}
+
+.project-details-accordion .accordion-button:after {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: 0.65rem;
+  background-size: 0.7rem;
+}
+
+.project-details-accordion .accordion-body {
+  padding: 1rem 0 0;
+}
+
+.project-details {
+  padding: 0;
+}
+
+.project-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 1.25rem;
+}
+
+.project-detail-card {
+  min-width: 0;
+  padding: 0.25rem 0 1.25rem;
+  border-bottom: 1px solid rgba(47, 49, 51, 0.14);
+}
+
+.project-detail-card:first-child,
+.project-detail-card:last-child {
+  grid-column: 1 / -1;
+}
+
+.project-detail-card:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.project-detail-card h3 {
+  margin: 0 0 0.65rem;
+  color: #2f3133;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.project-detail-card p {
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.technology-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.technology-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid rgba(47, 49, 51, 0.22);
+  border-radius: 999px;
+  background: transparent;
+  color: #2f3133;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.project-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.project-proof-placeholder {
+  display: flex;
+  min-height: 150px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 2px dashed #9a9b91;
+  border-radius: 0.65rem;
+  background: transparent;
+  color: #6c757d;
+  text-align: center;
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+
+.project-proof-placeholder:hover {
+  border-color: #c2b74b;
+  color: #2f3133;
+}
+
+.project-proof-placeholder i {
+  font-size: 1.75rem;
+}
+
+.project-proof-placeholder small {
+  color: #555;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.project-proof-placeholder span {
+  font-size: 0.85rem;
+}
+
+.project-proof-note {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.project-proof-image {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(47, 49, 51, 0.18);
+  border-radius: 0.65rem;
+  background: #f5f5f0;
+}
+
+.project-proof-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+
+.project-proof-image figcaption {
+  padding: 0.65rem 0.75rem;
+  color: #6c757d;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767.98px) {
+  .project-proof-image img {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .project-detail-grid,
+  .project-proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail-card:first-child,
+  .project-detail-card:last-child {
+    grid-column: auto;
+  }
+
+  .project-detail-card {
+    padding: 1rem;
+  }
+
+  .project-proof-placeholder {
+    min-height: 125px;
+  }
+}

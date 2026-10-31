@@ -156,6 +156,47 @@
   color: white;
 }
 
+.dark-mode .project-detail-card {
+  border-bottom-color: #666;
+}
+
+.dark-mode .technology-tag {
+  border-color: #777;
+  background-color: transparent;
+  color: white;
+}
+
+.dark-mode .project-proof-placeholder {
+  border-color: #999;
+  background: transparent;
+  color: #d0d0d0;
+}
+
+.dark-mode .project-proof-placeholder small {
+  color: #d0d0d0;
+}
+
+.dark-mode .project-details-accordion {
+  border-top-color: #666;
+}
+
+.dark-mode .project-details-accordion .accordion-button,
+.dark-mode .project-details-accordion .accordion-button:not(.collapsed) {
+  background: transparent;
+  color: white;
+  border-color: #888;
+}
+
+.dark-mode .project-details-accordion .accordion-button:hover {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dark-mode .project-details-accordion .accordion-button:focus-visible {
+  border-color: white;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.2);
+}
+
 
 /* ---------------------------------------
     Footer
@@ -247,4 +288,9 @@
 .dark-mode .div17:hover p,
 .dark-mode .div18:hover p {
   color: black;
+}
+
+.dark-mode .project-proof-image {
+  border-color: #777;
+  background: #292929;
 }
